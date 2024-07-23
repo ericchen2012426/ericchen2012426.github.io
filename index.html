@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>桑桑 wiki</title> 
+</head>
+<body>
+	
+<h1 id = "t" >欢迎来到桑之wiki</h1>
+<p>请输入授权访问号:</p>
+<input type = "password" id = "ps" style = "font-size: 50px;"/>
+<style>
+    #ps{width:40%;height:50px;}
+</style>
+<script>
+function test()
+{
+    var a = "none";
+    var sx = "性格:待定 ; 年龄:12;"
+    a = document.getElementById("ps").value;
+    if(a == "114514")
+    {
+        document.getElementById("x").innerHTML = sx;
+    }
+    else if(a == "201204")
+    {
+        document.getElementById("x").innerHTML = sx;
+    }
+    else
+    {
+        alert("你不是授权人员,请离开!!");
+    }
+}
+</script>
+<button onclick="test()">提交</button>
+<h2 id = "x">解锁后查看 </h2>
+</body>
+</html>
